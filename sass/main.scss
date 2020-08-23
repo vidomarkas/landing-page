@@ -1,0 +1,17 @@
+@import "normalize";
+@import "slick-theme";
+
+@import "abstracts/variables";
+@import "base/base";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/section-welcome";
+@import "layout/section-about";
+@import "layout/section-testimonials";
+@import "layout/section-news";
+@import "layout/section-contact-details";
+@import "layout/section-contact-form";
+@import "layout/section-map";
+@import "layout/section-social";
+@import "layout/footer";

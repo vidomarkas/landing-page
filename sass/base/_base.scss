@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //this defines what 1rem is
+  font-size: 62.5%; //1rem = 10px 10px / 16px = 62.5%
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.line {
+  border-bottom: 2px solid $color-blue;
+  width: 11rem;
+  margin: 0rem auto 4rem auto;
+  &-white {
+    border-bottom: 2px solid #fff;
+  }
+  &-pink {
+    border-bottom: 2px solid $color-pink;
+  }
+  &-narrow {
+    width: 4.8rem;
+    margin: 3.4rem 0;
+  }
+}
+
+.section {
+  padding: 6rem;
+  position: relative;
+  overflow: hidden;
+  &__star-overlay {
+    background-image: url("../../assets/img/Star.svg");
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 100%;
+    max-height: 70rem;
+    position: absolute;
+
+    &--left {
+      top: -50px;
+      left: -50px;
+      opacity: 1;
+      background-position: left;
+    }
+    &--right {
+      top: 0;
+      right: -100px;
+      opacity: 0.11;
+      background-position: right;
+    }
+    &--dimmed {
+      opacity: 0.11;
+    }
+  }
+
+  &__container {
+    width: 56%;
+    margin: 0 auto;
+    position: relative;
+  }
+}

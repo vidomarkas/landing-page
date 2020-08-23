@@ -1,0 +1,21 @@
+.contact-details {
+  background-color: $color-pink;
+  color: #fff;
+  &__option {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+    a {
+      color: #fff;
+      font-size: 2.4rem;
+      padding: 1rem 1.4rem;
+      line-height: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    svg {
+      height: 2.4rem;
+      margin-right: 1.2rem;
+    }
+  }
+}

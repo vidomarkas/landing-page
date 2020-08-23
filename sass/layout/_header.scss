@@ -1,0 +1,85 @@
+.header {
+  &__top-contact {
+    background-color: $color-pink;
+    &--wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+    }
+    a {
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 1rem 1.4rem;
+      line-height: 1.5rem;
+      display: flex;
+    }
+
+    &__icon {
+      height: 1.5rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  &__main {
+    background-image: url("/../assets/img/Images/frank-mckenna-150516-unsplash.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 35px);
+    position: relative;
+
+    &--wrapper {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    position: absolute;
+    top: 8.4rem;
+    left: 0;
+    &__text {
+      color: $color-blue;
+      font-size: 2rem;
+      margin-top: 2.1rem;
+    }
+    &__icon {
+      height: 4.6rem;
+      margin: 1.3rem;
+    }
+  }
+
+  &__logo {
+    margin: 7.9rem auto 0 auto;
+    padding-bottom: 15.6rem;
+    img {
+      height: 10.6rem;
+    }
+  }
+
+  &__textbox {
+    text-align: center;
+    color: $color-blue;
+    width: 36%;
+    margin: 0 auto;
+  }
+
+  &__arrow-down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+      height: 2.2rem;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(2.05);
+      }
+    }
+  }
+}

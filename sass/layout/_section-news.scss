@@ -1,0 +1,83 @@
+.news {
+  color: $color-pink;
+  background-color: #f4f4f4;
+  padding: 6rem 0;
+  &__card {
+    position: relative;
+    background-color: #fff;
+    width: 38.8rem;
+    margin-bottom: 5rem;
+    &__date {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-teal;
+      color: #fff;
+      padding: 1.6rem 3.1rem;
+      font-size: 1.5rem;
+      white-space: nowrap;
+    }
+    &__image {
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 20.9rem;
+      &--0 {
+        background-image: url("/../../assets/img/Images/maximilian-weisbecker-121294-unsplash.jpg");
+      }
+      &--1 {
+        background-image: url("/../../assets/img/Images/yoann-boyer-185507-unsplash.jpg");
+      }
+      &--2 {
+        background-image: url("/../../assets/img/Images/blur-blurred-book-46274.jpg");
+      }
+      &--3 {
+        background-image: url("/../../assets/img/Images/frank-mckenna-150516-unsplash.jpg");
+      }
+      &--4 {
+        background-image: url("/../../assets/img/Images/bay-beach-blue-386020.jpg");
+      }
+    }
+    &__content {
+      padding: 4rem 2.5rem;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 2.4rem;
+    }
+    &__text {
+      color: $color-blue;
+      text-align: left;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      margin-bottom: 5.5rem;
+    }
+    &__button {
+      text-align: center;
+      margin: 0 auto 2rem auto;
+
+      a {
+        background-color: $color-pink;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 1.9rem 2.8rem;
+        font-size: 2rem;
+        transition: 0.3s background-color;
+        &:hover {
+          background-color: $color-pink-light;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.news-dots li button:before {
+  font-family: "slick";
+  font-size: 16px !important;
+  line-height: 20px;
+  color: $color-pink !important;
+}

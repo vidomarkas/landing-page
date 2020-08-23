@@ -1,0 +1,29 @@
+.testimonials {
+  background-color: $color-teal;
+  color: #fff;
+
+  &__text {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  &__author {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    &__name {
+    }
+    &__occupation {
+      margin-top: 1.4rem;
+      margin-bottom: 5.8rem;
+    }
+  }
+}
+
+.testimonial-dots li button:before {
+  font-family: "slick";
+  font-size: 16px !important;
+  line-height: 20px;
+  color: #fff !important;
+}

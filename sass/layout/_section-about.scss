@@ -1,0 +1,94 @@
+.about {
+  color: $color-pink;
+  background-color: #f4f4f4;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 38.5rem);
+    grid-template-rows: repeat(2, 38.5rem);
+    column-gap: 3.8rem;
+    row-gap: 3.8rem;
+    width: 84%;
+    margin: 7.6rem auto 0.64rem auto;
+    color: #fff;
+    &-item {
+      position: relative;
+      background-position: right bottom;
+      background-size: cover;
+
+      &--courses {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-image: url("/../../assets/img/Images/pexels-photo-733856.jpg");
+      }
+      &--books {
+        grid-column: 2 /3;
+        grid-row: 1 / 2;
+        background-image: url("/../../assets/img/Images/blur-blurred-book-46274.jpg");
+      }
+      &--speaking {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        background-image: url("/../../assets/img/Images/armchairs-blur-business-296883.jpg");
+      }
+      &--bussiness {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-image: url("/../../assets/img/Images/maximilian-weisbecker-121294-unsplash.jpg");
+      }
+      &--chatshow {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-image: url("/../../assets/img/Images/rawpixel-1087170-unsplash-edited.jpg");
+      }
+      &--tide {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        background-image: url("/../../assets/img/Images/bay-beach-blue-386020.jpg");
+      }
+      &__overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        &--blue {
+          background-color: $color-blue;
+        }
+        &--teal {
+          background-color: $color-teal;
+        }
+        &--pink {
+          background-color: $color-pink;
+        }
+      }
+
+      &__content {
+        position: relative;
+        margin: 2rem;
+      }
+
+      &__heading {
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 3rem;
+        &--svg {
+          svg {
+            height: 6rem;
+            padding-top: 2rem;
+          }
+        }
+        &--business {
+          margin-bottom: -2rem;
+          svg {
+            height: 8.5rem;
+          }
+        }
+      }
+
+      &__text {
+        font-size: 1.6rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
