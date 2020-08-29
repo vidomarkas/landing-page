@@ -3,6 +3,8 @@
 ![InkedUntitled_LI](https://user-images.githubusercontent.com/37672494/90982373-b683d100-e55e-11ea-86e8-6a4410efeafe.jpg)
 
 
+Deployed: https://vigorous-galileo-243ff2.netlify.app/
+
 to edit sass code run:
 "npm install"
 
